@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>City Design</title>
+    <title>City Design - Home</title>
 
     <style>
-
-        /* Main header (CITY DESIGN) */
+        /* Header */
         .header {
             background: linear-gradient(to right, #ff8a65, #ffab80);
             padding: 25px 0;
@@ -17,7 +16,7 @@
             letter-spacing: 2px;
         }
 
-        /* Navigation bar */
+        /* Navbar */
         .navbar {
             background-color: #333;
             padding: 12px 0;
@@ -25,40 +24,114 @@
             justify-content: center;
         }
 
-        /* Nav links */
         .navbar a {
             color: white;
             text-decoration: none;
             margin: 0 25px;
             font-size: 18px;
-            font-family: Arial, sans-serif;
             font-weight: bold;
+            font-family: Arial;
         }
 
         .navbar a:hover {
             color: #ffab80;
         }
 
+        /* Content Section */
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Table Styling */
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        table, th, td {
+            border: 2px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff8a65;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Top Gradient Header -->
+    <!-- Header -->
     <div class="header">
         CITY DESIGN
     </div>
 
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <div class="navbar">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="#">About</a>
         <a href="#">Project</a>
-        <a href="#">Sushant</a>
-        <a href="#">Sunil</a>
-        <a href="#">Vaishnavi</a>
-        <a href="#">Vijayalaxmi</a>
-        <a href="#">Collabz</a>
+        <a href="sushant.html">Sushant</a>
+        <a href="sunil.html">Sunil</a>
+        <a href="vaishnavi.html">Vaishnavi</a>
+        <a href="vijayalaxmi.html">Vijayalaxmi</a>
+        <a href="collabz.html">Collabz</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Introduction</h2>
+        <p><b>Course:</b> Design and Analysis of Algorithms (DAA)</p>
+        <p><b>Course Code:</b> 24ECSC2O5</p>
+        <p><b>Course Instructor:</b> Prof. Prakash Hegade</p>
+        <p><b>University:</b> KLE Technological University</p>
+        <p><b>Topic:</b> City Design</p>
+
+        <h2>Team Members</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>USN</th>
+            </tr>
+            <tr>
+                <td>Vaishnavi</td>
+                <td>01FE24BCS295</td>
+            </tr>
+            <tr>
+                <td>Vijayalaxmi</td>
+                <td>01FE24BCS292</td>
+            </tr>
+            <tr>
+                <td>Sushant</td>
+                <td>01FE24BCS293</td>
+            </tr>
+            <tr>
+                <td>Sunil</td>
+                <td>01FE24BCS296</td>
+            </tr>
+        </table>
+
     </div>
 
 </body>
