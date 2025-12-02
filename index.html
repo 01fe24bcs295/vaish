@@ -1,200 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>City Design - Home</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Project</title>
 
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #f7f7f7;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(to right, #ff7a59, #ffae72);
-            padding: 40px 0;
-            text-align: center;
-            font-size: 40px;
-            font-weight: 600;
-            color: white;
-            letter-spacing: 3px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
         }
 
         /* Navbar */
         .navbar {
-            background: rgba(0, 0, 0, 0.75);
-            padding: 15px 0;
             display: flex;
-            justify-content: center;
-            backdrop-filter: blur(6px);
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #0d47a1;
+            color: white;
         }
 
         .navbar a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            margin: 0 20px;
-            font-size: 17px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .navbar a:hover {
-            color: #ffae72;
-            transform: scale(1.1);
-        }
-
-        /* Main Content Box */
-        .container {
-            width: 80%;
-            background: white;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        p {
-            font-size: 18px;
-            color: #555;
-            text-align: center;
-        }
-
-        /* Team Table */
-        table {
-            width: 80%;
-            margin: 25px auto;
-            border-collapse: collapse;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.12);
-        }
-
-        th {
-            background: #ff7a59;
-            color: white;
-            font-size: 18px;
-            padding: 12px;
-        }
-
-        td {
-            padding: 12px;
-            text-align: center;
-            background: #fff;
-            font-size: 17px;
-            color: #333;
-            border-bottom: 1px solid #ddd;
-        }
-
-        tr:hover td {
-            background: #ffe6db;
-            transition: 0.3s;
-        }
-
-        /* Buttons */
-        .button-container {
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        .big-button {
-            display: inline-block;
-            background: linear-gradient(to right, #ff7a59, #ff9a70);
-            color: white;
+            margin: 0 15px;
             font-weight: 600;
-            padding: 15px 35px;
-            margin: 10px;
-            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1486304873000-235643847519?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Section */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #0d47a1;
+            font-size: 32px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 20px;
             border-radius: 10px;
-            font-size: 18px;
-            transition: transform 0.3s, opacity 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
 
-        .big-button:hover {
-            transform: translateY(-5px);
-            opacity: 0.85;
+        .card h3 {
+            color: #0d47a1;
         }
 
-        /* Fade animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* Team Section */
+        .team-card {
+            width: 200px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            margin: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0d47a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        CITY DESIGN
-    </div>
-
     <!-- Navbar -->
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Project</a>
-        <a href="sushant.html">Sushant</a>
-        <a href="sunil.html">Sunil</a>
-        <a href="vaishnavi.html">Vaishnavi</a>
-        <a href="vijayalaxmi.html">Vijayalaxmi</a>
-        <a href="collabz.html">Collabz</a>
+        <h2>Smart City</h2>
+        <div>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#team">Team</a>
+        </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h2>Introduction</h2>
-        <p><strong>Course:</strong> Design and Analysis of Algorithms (DAA)</p>
-        <p><strong>Course Code:</strong> 24ECSC205</p>
-        <p><strong>Instructor:</strong> Prof. Prakash Hegade</p>
-        <p><strong>University:</strong> KLE Technological University</p>
-        <p><strong>Topic:</strong> City Design</p>
-
-        <h2>Team Members</h2>
-
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>USN</th>
-            </tr>
-            <tr>
-                <td>Vaishnavi</td>
-                <td>01FE24BCS295</td>
-            </tr>
-            <tr>
-                <td>Vijayalaxmi</td>
-                <td>01FE24BCS292</td>
-            </tr>
-            <tr>
-                <td>Sushant</td>
-                <td>01FE24BCS293</td>
-            </tr>
-            <tr>
-                <td>Sunil</td>
-                <td>01FE24BCS296</td>
-            </tr>
-        </table>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Smart City Management System</h1>
+        <p>
+            A futuristic approach to improve urban living using IoT, automation, and smart technologies.
+        </p>
     </div>
 
-    <!-- Member Buttons -->
-    <div class="button-container">
-        <a href="Vaishnavi.html" class="big-button">Vaishnavi</a>
-        <a href="Vijayalaxmi.html" class="big-button">Vijayalaxmi</a>
-        <a href="Sushant.html" class="big-button">Sushant</a>
-        <a href="Sunil.html" class="big-button">Sunil</a>
+    <!-- Features Section -->
+    <div class="section" id="features">
+        <h2>Project Features</h2>
+
+        <div class="features">
+            <div class="card">
+                <h3>Smart Traffic System</h3>
+                <p>Automated management of traffic signals for reduced congestion.</p>
+            </div>
+
+            <div class="card">
+                <h3>Waste Management</h3>
+                <p>Smart dustbins and waste monitoring using sensors.</p>
+            </div>
+
+            <div class="card">
+                <h3>Smart Energy</h3>
+                <p>Efficient usage of electricity through smart lighting and meters.</p>
+            </div>
+
+            <div class="card">
+                <h3>Safety & Surveillance</h3>
+                <p>Advanced monitoring for public security and emergency response.</p>
+            </div>
+        </div>
     </div>
+
+    <!-- Team Section -->
+    <div class="section" id="team">
+        <h2>Our Team</h2>
+
+        <div class="features">
+            <div class="team-card">
+                <h3>Vaishnavi</h3>
+                <p>Developer</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Sushant</h3>
+                <p>Developer</p>
+            </div>
+
+            <div class="team-card">
+                <h3>Member 3</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Smart City Project | All Rights Reserved
+    </footer>
 
 </body>
 </html>
-
